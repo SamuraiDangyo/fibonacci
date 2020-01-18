@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+<head>
+	<meta charset="utf-8" />
+	<title>My really old program</title>
+</head>
+
+<body background="tausta11.gif">
+
+  <script type='text/javascript'>
+		/* My really old program */
+    function nel_summa(sivu1, sivu2) {
+      return ((sivu1 * sivu1) + (sivu2 * sivu2));
+    }
+
+    function plussa(luku) {
+      luku *= 1;
+      let summa = 1;
+      let viimeisin = 0;
+      let vastaus2 = "Numerosi on liian suuri!";
+
+      if (luku < 1477) {
+        for (let i = 0; i < luku - 1; i++) {
+          summa = summa + viimeisin;
+          viimeisin = summa - viimeisin;
+        }
+
+        let vastaus = "" + summa + ""
+
+        return vastaus;
+      }
+
+      return vastaus2;
+    }
+	</script>
+
+	<hr>
+
+	<center>
+		<h3> Fibonaccin lukusarja</h3>
+		<h5>Laita kentt&auml;&auml;n niin mones luku kuin haluat tiet&auml;&auml;</h5>
+		<form>
+			<input name="textarea" type="Text" value="1" size=4 />
+			<input value="  Laske  " type="button" onClick="forms[1].tekstikentta.value=plussa(this.form.textarea.value)" />
+		</form>
+		<form>
+			<input type="Text" size=25 name="tekstikentta" value="T&auml;h&auml;n tulee vastaus!" />
+		</form>
+	</center>
+
+	<hr>
+
+	<center>
+	  <p>
+	    <a href=mailto:kalleankka1@gmail.com><address>(C) SamuraiDangyo</address></a>
+		  <br>
+      <script type='text/javascript'>
+			  document.write("<font size=-2>Last modified " + document.lastModified + "</font>")
+		  </script>
+	  </p>
+	</center>
+</body>
+
+</html>
